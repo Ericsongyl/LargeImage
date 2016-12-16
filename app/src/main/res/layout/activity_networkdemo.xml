@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="加载网络大图"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_clear_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="清除缓存"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <lagerimage.nicksong.view.largeimage.LargeImageView
+            android:id="@+id/networkDemo_photoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <io.netopen.hotbitmapgg.library.view.RingProgressBar
+            android:id="@+id/networkDemo_ringProgressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            app:max="100"
+            app:ringColor="@color/colorAccent"
+            app:ringProgressColor="@color/colorPrimaryDark"
+            app:ringWidth="3dp"
+            app:style="STROKE"
+            app:textColor="@color/colorAccent"
+            app:textIsShow="true"
+            app:textSize="16sp" />
+
+    </FrameLayout>
+
+</LinearLayout>

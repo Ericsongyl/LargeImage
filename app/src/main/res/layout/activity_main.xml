@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_local_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@drawable/shape_circle_blue"
+        android:text="本地\n大图"
+        android:textColor="@android:color/white"
+        android:clickable="false"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_viewpage_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ViewPager里的大图片"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_net_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/shape_circle_red"
+        android:text="网络\n大图"
+        android:textColor="@android:color/white"
+        android:clickable="false"
+        android:textSize="18sp" />
+
+</LinearLayout>
